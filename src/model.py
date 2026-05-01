@@ -17,4 +17,5 @@ class ProphetModel:
     def predict(self, periods: int, freq: str = "D") -> pd.DataFrame:
         future = self.model.make_future_dataframe(periods=periods, freq=freq)
         forecast = self.model.predict(future)
+        print("dummy print")
         return forecast
