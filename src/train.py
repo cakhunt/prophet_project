@@ -29,7 +29,7 @@ def train_pipeline(data_path: str):
 
     metrics = evaluate(y_true, y_pred)
 
-    print("Metrics:", metrics)
+    print("Metrics is :", metrics)
 
     return forecast
 
